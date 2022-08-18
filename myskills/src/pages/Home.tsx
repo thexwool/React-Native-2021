@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 import {
     View,
     Text,
@@ -6,8 +6,8 @@ import {
     TextInput,
     FlatList
 } from 'react-native'
-import Button from "../components/Button";
-import SkillCard from "../components/SkillCard";
+import Button from "../components/Button"
+import SkillCard from "../components/SkillCard"
 
 interface SkillData {
     id: string
@@ -81,6 +81,7 @@ export default function Home() {
                         onPress={() => handleRemoveSkill(item.id)}
                     />
                 )}
+                showsVerticalScrollIndicator={false}
             />
         </View>
     )
@@ -90,8 +91,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#121015',
-        paddingVertical: 70,
         paddingHorizontal: 30,
+        paddingTop: 75
     },
     title: {
         color: '#FFF',
