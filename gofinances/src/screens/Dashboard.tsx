@@ -5,7 +5,7 @@ export default function Dashboard(){
     return(
         <View style={styles.container}>
             <Text style={{color: '#FFF'}}>
-                Hello World
+                Olá mundo
             </Text>
         </View>
     )
