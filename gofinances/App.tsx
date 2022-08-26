@@ -1,6 +1,7 @@
-import React from 'react'
+import React from 'react';
 import * as SplashScreen from 'expo-splash-screen';
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider } from 'styled-components';
+import { StatusBar } from 'expo-status-bar';
 
 import {
     useFonts,
@@ -32,3 +33,4 @@ export default function App() {
         </ThemeProvider>
     )
 }
+
