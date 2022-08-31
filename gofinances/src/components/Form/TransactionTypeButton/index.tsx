@@ -11,15 +11,23 @@ const icons = {
     down: 'arrow-down-circle'
 }
 
-interface Props{
+interface Props extends TouchableOpacityProps{
     title: string
     type: 'up' | 'down'
+    isActive: boolean
 }
 
-export function TransactionTypeButton({ title, type, ...rest } : Props){
+export function TransactionTypeButton({ title, type, isActive, ...rest } : Props){
     return(
-        <Container {...rest}>
-            <Icon name={icons[type]}/>
+        <Container 
+            type={type}
+            isActive={isActive}
+            {...rest} 
+        >
+            <Icon 
+                name={icons[type]}
+                type={type}
+            />
             <Title>
                 {title}
             </Title>
