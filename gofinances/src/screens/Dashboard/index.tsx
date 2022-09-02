@@ -14,16 +14,17 @@ import {
     HighLightCards,
     Transactions,
     Title,
-    TransactionsList
+    TransactionsList,
+    LogoutButton
 } from "./styles";
 
-export interface DataListProps extends TransactionCardProps{
+export interface DataListProps extends TransactionCardProps {
     id: string
 }
 
-export default function Dashboard() {
+export function Dashboard() {
     const data: DataListProps[] = [
-        {   
+        {
             id: '1',
             type: 'positive',
             title: 'Desenvolvimento de site',
@@ -71,7 +72,9 @@ export default function Dashboard() {
                         </User>
                     </UserInfo>
 
-                    <Icon name='power' />
+                    <LogoutButton onPress={() => {}}>
+                        <Icon name='power' />
+                    </LogoutButton>
                 </UserWrapper>
             </Header>
 
